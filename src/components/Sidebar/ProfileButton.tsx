@@ -15,7 +15,6 @@ export default function ProfileButton({ collapse }: { collapse: boolean }) {
       active={active}
       collapse={collapse}
     >
-      <UserIcon weight={active ? 'fill' : 'bold'} />
     </SidebarItem>
   )
 }

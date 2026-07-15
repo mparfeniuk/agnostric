@@ -488,8 +488,8 @@ export default {
     Remote: 'ระยะไกล',
     'Encrypted Key': 'คีย์ที่เข้ารหัส',
     'Private Key': 'คีย์ส่วนตัว',
-    'Welcome to Jumble': 'ยินดีต้อนรับสู่ Jumble',
-    'Jumble is a client focused on browsing relays. Get started by exploring interesting relays or login to view your following feed.':
+    'Welcome to Agnostric': 'ยินดีต้อนรับสู่ Jumble',
+    'Agnostric (Jumble fork) is a client focused on browsing relays. Get started by exploring interesting relays or login to view your following feed.':
       'Jumble เป็นไคลเอนต์ที่เน้นการเรียกดูรีเลย์ เริ่มต้นด้วยการสำรวจรีเลย์ที่น่าสนใจ หรือเข้าสู่ระบบเพื่อดูฟีดที่คุณติดตาม',
     'Explore Relays': 'สำรวจรีเลย์',
     'Choose a feed': 'เลือกฟีด',
@@ -589,7 +589,7 @@ export default {
     'Publish Highlight': 'เผยแพร่ไฮไลท์',
     'Show replies': 'แสดงการตอบกลับ',
     'Hide replies': 'ซ่อนการตอบกลับ',
-    'Welcome to Jumble!': 'ยินดีต้อนรับสู่ Jumble!',
+    'Welcome to Agnostric!': 'ยินดีต้อนรับสู่ Jumble!',
     'Your feed is empty because you are not following anyone yet. Start by exploring interesting content and following users you like!':
       'ฟีดของคุณว่างเปล่าเพราะคุณยังไม่ได้ติดตามใครเลย เริ่มต้นด้วยการสำรวจเนื้อหาที่น่าสนใจและติดตามผู้ใช้ที่คุณชอบ!',
     'Search Users': 'ค้นหาผู้ใช้',

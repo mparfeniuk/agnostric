@@ -211,7 +211,7 @@ export default function Content({
             if (mediaHidden) return null
             return (
               <ImageGallery
-                className="mt-2"
+                className="mt-3 whitespace-normal"
                 key={index}
                 images={allImages}
                 start={start}
@@ -225,7 +225,7 @@ export default function Content({
             const mediaInfo = imetaInfos?.find((info) => info.url === node.data)
             return (
               <MediaPlayer
-                className="mt-2"
+                className="mt-3 whitespace-normal"
                 key={index}
                 src={node.data}
                 pubkey={mediaInfo?.pubkey ?? event?.pubkey}
@@ -272,7 +272,7 @@ export default function Content({
               <YoutubeEmbeddedPlayer
                 key={index}
                 url={node.data}
-                className="mt-2"
+                className="mt-3 whitespace-normal"
                 mustLoad={effectiveMustLoad}
               />
             )
@@ -283,7 +283,7 @@ export default function Content({
               <XEmbeddedPost
                 key={index}
                 url={node.data}
-                className="mt-2"
+                className="mt-3 whitespace-normal"
                 mustLoad={effectiveMustLoad}
               />
             )
@@ -293,7 +293,7 @@ export default function Content({
         {mediaHidden && hiddenMediaCount > 0 && (
           <HiddenMediaBar count={hiddenMediaCount} onClick={() => setMediaRevealed(true)} />
         )}
-        {lastNormalUrl && <WebPreview className="mt-2" url={lastNormalUrl} />}
+        {lastNormalUrl && <WebPreview className="mt-3" url={lastNormalUrl} />}
       </div>
       {enableHighlight && (
         <HighlightButton onHighlight={handleHighlight} containerRef={contentRef} />

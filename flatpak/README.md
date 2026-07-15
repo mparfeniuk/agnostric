@@ -1,6 +1,6 @@
 # Flatpak packaging
 
-Jumble can be built as a Flatpak with the same app id as the Electron package:
+Agnostric can be built as a Flatpak with the same app id as the Electron package:
 `com.codytseng.jumble`.
 
 Flatpak builds are architecture-specific. The same manifest can be built for

@@ -1,12 +1,12 @@
 # AGENTS.md
 
-This document is designed to help AI Agents better understand and modify the Jumble project.
+This document is designed to help AI Agents better understand and modify the Agnostric (Jumble fork) project.
 
 ## Project Overview
 
-Jumble is a user-friendly Nostr client for exploring relay feeds.
+Agnostric (Jumble fork) is a user-friendly Nostr client for exploring relay feeds.
 
-- **Project Name**: Jumble
+- **Project Name**: Agnistric (Jumble fork)
 - **Main Tech Stack**: React 18 + TypeScript + Vite
 - **UI Framework**: Tailwind CSS + Radix UI
 - **State Management**: Jotai

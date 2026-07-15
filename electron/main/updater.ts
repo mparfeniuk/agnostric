@@ -159,8 +159,8 @@ export class Updater {
     if (!Notification.isSupported()) return
     try {
       new Notification({
-        title: 'Jumble update ready',
-        body: `Version ${version} will be installed the next time you quit Jumble.`
+        title: 'Agnostric update ready',
+        body: `Version ${version} will be installed the next time you quit Agnostric.`
       }).show()
     } catch {
       // ignore

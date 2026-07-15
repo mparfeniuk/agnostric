@@ -495,8 +495,8 @@ export default {
     Remote: 'Uzak',
     'Encrypted Key': 'Şifrelenmiş Anahtar',
     'Private Key': 'Özel Anahtar',
-    'Welcome to Jumble': "Jumble'a hoş geldiniz",
-    'Jumble is a client focused on browsing relays. Get started by exploring interesting relays or login to view your following feed.':
+    'Welcome to Agnostric': "Jumble'a hoş geldiniz",
+    'Agnostric (Jumble fork) is a client focused on browsing relays. Get started by exploring interesting relays or login to view your following feed.':
       "Jumble, relay'lere göz atmaya odaklanan bir istemcidir. İlginç relay'leri keşfederek başlayın veya takip akışınızı görüntülemek için giriş yapın.",
     'Explore Relays': 'Relayleri Keşfet',
     'Choose a feed': 'Bir akış seçin',
@@ -600,7 +600,7 @@ export default {
     'Publish Highlight': 'Öne Çıkanı Yayınla',
     'Show replies': 'Yanıtları göster',
     'Hide replies': 'Yanıtları gizle',
-    'Welcome to Jumble!': "Jumble'a hoş geldiniz!",
+    'Welcome to Agnostric!': "Jumble'a hoş geldiniz!",
     'Your feed is empty because you are not following anyone yet. Start by exploring interesting content and following users you like!':
       'Henüz kimseyi takip etmediğiniz için akışınız boş. İlginç içerikleri keşfederek ve beğendiğiniz kullanıcıları takip ederek başlayın!',
     'Search Users': 'Kullanıcı Ara',

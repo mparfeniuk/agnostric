@@ -38,14 +38,14 @@ export default function PrimaryPageSidebar() {
         sidebarCollapse ? 'w-16 px-2' : 'w-52 px-4'
       )}
     >
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col">
         {sidebarCollapse ? (
           <button
             className="mb-4 flex h-12 w-full cursor-pointer items-center justify-center transition-opacity hover:opacity-80"
             onClick={() => navigate('home')}
             aria-label="Go to home"
           >
-            <Icon className="size-6" />
+             <h1 className="font-nostrelium text-primary text-5xl">a</h1>
           </button>
         ) : (
           <button
@@ -53,7 +53,7 @@ export default function PrimaryPageSidebar() {
             onClick={() => navigate('home')}
             aria-label="Go to home"
           >
-            <Logo />
+           <Logo/>
           </button>
         )}
         <HomeButton collapse={sidebarCollapse} />

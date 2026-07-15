@@ -8,7 +8,7 @@ export default function HomeButton({ collapse }: { collapse: boolean }) {
 
   return (
     <SidebarItem title="Home" onClick={() => navigate('home')} active={active} collapse={collapse}>
-      <HouseIcon weight={active ? 'fill' : 'bold'} />
+     
     </SidebarItem>
   )
 }

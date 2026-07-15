@@ -498,8 +498,8 @@ export default {
     Remote: 'Remoto',
     'Encrypted Key': 'Chiave Crittografata',
     'Private Key': 'Chiave Privata',
-    'Welcome to Jumble': 'Benvenuto su Jumble',
-    'Jumble is a client focused on browsing relays. Get started by exploring interesting relays or login to view your following feed.':
+    'Welcome to Agnostric': 'Benvenuto su Jumble',
+    'Agnostric (Jumble fork) is a client focused on browsing relays. Get started by exploring interesting relays or login to view your following feed.':
       'Jumble è un client focalizzato sulla navigazione dei relay. Inizia esplorando relay interessanti o effettua il login per visualizzare il tuo feed di following.',
     'Explore Relays': 'Esplora Relay',
     'Choose a feed': 'Scegli un feed',
@@ -602,7 +602,7 @@ export default {
     'Publish Highlight': 'Pubblica Evidenziazione',
     'Show replies': 'Mostra risposte',
     'Hide replies': 'Nascondi risposte',
-    'Welcome to Jumble!': 'Benvenuto su Jumble!',
+    'Welcome to Agnostric!': 'Benvenuto su Jumble!',
     'Your feed is empty because you are not following anyone yet. Start by exploring interesting content and following users you like!':
       'Il tuo feed è vuoto perché non stai ancora seguendo nessuno. Inizia esplorando contenuti interessanti e seguendo gli utenti che ti piacciono!',
     'Search Users': 'Cerca Utenti',

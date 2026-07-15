@@ -17,12 +17,9 @@ export default function NotificationsButton({ collapse }: { collapse: boolean })
       active={active}
       collapse={collapse}
     >
-      <div className="relative">
-        <BellIcon weight={active ? 'fill' : 'bold'} />
         {hasNewNotification && (
-          <div className="bg-primary ring-background absolute -top-1 right-0 h-2 w-2 rounded-full ring-2" />
+          <div className="bg-primary ring-background absolute left-0 h-2 w-2 rounded-full ring-2" />
         )}
-      </div>
     </SidebarItem>
   )
 }

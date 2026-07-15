@@ -5,7 +5,7 @@ const hasMacSigningCert = !!process.env.CSC_LINK || hasAppleNotarizeCreds
 
 module.exports = {
   appId: 'com.codytseng.jumble',
-  productName: 'Jumble',
+  productName: 'Agnostric',
   copyright: 'Copyright © ${author}',
   directories: {
     output: 'release/${version}',

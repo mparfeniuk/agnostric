@@ -15,7 +15,6 @@ export default function BookmarkButton({ collapse }: { collapse: boolean }) {
       active={active}
       collapse={collapse}
     >
-      <BookmarkSimpleIcon weight={active ? 'fill' : 'bold'} />
     </SidebarItem>
   )
 }

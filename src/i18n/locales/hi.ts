@@ -495,8 +495,8 @@ export default {
     Remote: 'रिमोट',
     'Encrypted Key': 'एन्क्रिप्टेड की',
     'Private Key': 'प्राइवेट की',
-    'Welcome to Jumble': 'Jumble में आपका स्वागत है',
-    'Jumble is a client focused on browsing relays. Get started by exploring interesting relays or login to view your following feed.':
+    'Welcome to Agnostric': 'Jumble में आपका स्वागत है',
+    'Agnostric (Jumble fork) is a client focused on browsing relays. Get started by exploring interesting relays or login to view your following feed.':
       'Jumble एक क्लाइंट है जो रिले ब्राउज़ करने पर केंद्रित है। रोचक रिले की खोज करके शुरू करें या अपनी फ़ॉलोइंग फ़ीड देखने के लिए लॉगिन करें।',
     'Explore Relays': 'रिले एक्सप्लोर करें',
     'Choose a feed': 'एक फीड चुनें',
@@ -597,7 +597,7 @@ export default {
     'Publish Highlight': 'हाइलाइट प्रकाशित करें',
     'Show replies': 'जवाब दिखाएं',
     'Hide replies': 'जवाब छुपाएं',
-    'Welcome to Jumble!': 'Jumble में आपका स्वागत है!',
+    'Welcome to Agnostric!': 'Jumble में आपका स्वागत है!',
     'Your feed is empty because you are not following anyone yet. Start by exploring interesting content and following users you like!':
       'आपका फ़ीड खाली है क्योंकि आप अभी तक किसी को फ़ॉलो नहीं कर रहे हैं। दिलचस्प सामग्री का अन्वेषण करके और अपनी पसंद के उपयोगकर्ताओं को फ़ॉलो करके शुरू करें!',
     'Search Users': 'उपयोगकर्ता खोजें',

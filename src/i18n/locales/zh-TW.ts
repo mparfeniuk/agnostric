@@ -483,8 +483,8 @@ export default {
     Remote: '遠端',
     'Encrypted Key': '加密私鑰',
     'Private Key': '私鑰',
-    'Welcome to Jumble': '歡迎來到 Jumble',
-    'Jumble is a client focused on browsing relays. Get started by exploring interesting relays or login to view your following feed.':
+    'Welcome to Agnostric': '歡迎來到 Jumble',
+    'Agnostric (Jumble fork) is a client focused on browsing relays. Get started by exploring interesting relays or login to view your following feed.':
       'Jumble 是一個專注於瀏覽伺服器的客戶端。從探索有趣的伺服器開始，或者登入檢視你的關注動態。',
     'Explore Relays': '探索伺服器',
     'Choose a feed': '選擇一個動態',
@@ -574,7 +574,7 @@ export default {
     'Unfollow Special': '取消特別關注',
     'Personal Feeds': '個人訂閱',
     'Relay Feeds': '中繼訂閱',
-    'Welcome to Jumble!': '歡迎來到 Jumble！',
+    'Welcome to Agnostric!': '歡迎來到 Jumble！',
     'Your feed is empty because you are not following anyone yet. Start by exploring interesting content and following users you like!':
       '你的動態是空的，因為你還沒有關注任何人。開始探索有趣的內容並關注你喜歡的用戶吧！',
     'Search Users': '搜尋用戶',

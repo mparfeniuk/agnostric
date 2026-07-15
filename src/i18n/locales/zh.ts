@@ -483,8 +483,8 @@ export default {
     Remote: '远程',
     'Encrypted Key': '加密私钥',
     'Private Key': '私钥',
-    'Welcome to Jumble': '欢迎来到 Jumble',
-    'Jumble is a client focused on browsing relays. Get started by exploring interesting relays or login to view your following feed.':
+    'Welcome to Agnostric': '欢迎来到 Jumble',
+    'Agnostric (Jumble fork) is a client focused on browsing relays. Get started by exploring interesting relays or login to view your following feed.':
       'Jumble 是一个专注于浏览服务器的客户端。从探索有趣的服务器开始，或者登录查看你的关注动态。',
     'Explore Relays': '探索服务器',
     'Choose a feed': '选择一个动态',
@@ -579,7 +579,7 @@ export default {
     'Publish Highlight': '发布高亮',
     'Show replies': '显示回复',
     'Hide replies': '隐藏回复',
-    'Welcome to Jumble!': '欢迎来到 Jumble！',
+    'Welcome to Agnostric!': '欢迎来到 Jumble！',
     'Your feed is empty because you are not following anyone yet. Start by exploring interesting content and following users you like!':
       '你的动态是空的，因为你还没有关注任何人。开始探索有趣的内容并关注你喜欢的用户吧！',
     'Search Users': '搜索用户',

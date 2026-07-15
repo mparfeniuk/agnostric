@@ -136,7 +136,7 @@ export default function Profile({ id }: { id?: string }) {
               <TextWithEmojis
                 text={username}
                 emojis={emojis}
-                className="truncate text-3xl font-minostrelis select-text"
+                className="truncate text-3xl font-nostrelium select-text"
               />
               <TrustScoreBadge pubkey={pubkey} />
               {isFollowingYou && (
@@ -147,13 +147,13 @@ export default function Profile({ id }: { id?: string }) {
             </div>
             <Nip05 pubkey={pubkey} />
             {lightningAddress && (
-              <div className="flex items-center gap-1 text-sm text-yellow-400 select-text">
+              <div className="flex items-center gap-1 text-sm text-primary select-text">
                 <Zap className="size-4 shrink-0" />
                 <LightningAddressCopy lightningAddress={lightningAddress} />
               </div>
             )}
             {sp && (
-              <div className="flex items-center gap-1 text-sm text-orange-500 select-text">
+              <div className="flex items-center gap-1 text-sm text-amber-200 select-text">
                 <Bitcoin className="size-4 shrink-0" />
                 <SpCopy sp={sp} />
                 <SpQrCode sp={sp} />

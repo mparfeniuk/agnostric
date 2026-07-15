@@ -17,7 +17,6 @@ export default function SettingsButton({ collapse }: { collapse: boolean }) {
       collapse={collapse}
       active={active}
     >
-      <GearSixIcon weight={active ? 'fill' : 'bold'} />
     </SidebarItem>
   )
 }

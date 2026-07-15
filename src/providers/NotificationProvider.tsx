@@ -114,9 +114,9 @@ export function NotificationProvider({ children }: { children: React.ReactNode }
 
     // Update title
     if (totalBadgeCount > 0) {
-      document.title = `(${totalBadgeCount >= 10 ? '9+' : totalBadgeCount}) Jumble`
+      document.title = `(${totalBadgeCount >= 10 ? '9+' : totalBadgeCount}) Agnostric`
     } else {
-      document.title = 'Jumble'
+      document.title = 'Agnostric'
     }
 
     // Update favicons

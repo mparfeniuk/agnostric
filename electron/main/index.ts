@@ -72,7 +72,7 @@ function createWindow() {
     height: savedState.height,
     minWidth: 480,
     minHeight: 480,
-    title: 'Jumble',
+    title: 'Agnostric',
     show: false,
     backgroundColor: nativeTheme.shouldUseDarkColors ? '#171717' : '#ffffff',
     webPreferences: {

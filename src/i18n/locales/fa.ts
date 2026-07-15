@@ -493,8 +493,8 @@ export default {
     Remote: 'از راه دور',
     'Encrypted Key': 'رمزگذاری شده کلید',
     'Private Key': 'کلید خصوصی',
-    'Welcome to Jumble': 'به Jumble خوش آمدید',
-    'Jumble is a client focused on browsing relays. Get started by exploring interesting relays or login to view your following feed.':
+    'Welcome to Agnostric': 'به Jumble خوش آمدید',
+    'Agnostric (Jumble fork) is a client focused on browsing relays. Get started by exploring interesting relays or login to view your following feed.':
       'Jumble یک کلاینت متمرکز بر مرور رله‌هاست. با کاوش در رله‌های جالب شروع کنید یا وارد شوید تا فید دنبال‌کننده‌های خود را مشاهده کنید.',
     'Explore Relays': 'کاوش در رله‌ها',
     'Choose a feed': 'یک فید انتخاب کنید',
@@ -596,7 +596,7 @@ export default {
     'Publish Highlight': 'انتشار برجسته‌سازی',
     'Show replies': 'نمایش پاسخ‌ها',
     'Hide replies': 'پنهان کردن پاسخ‌ها',
-    'Welcome to Jumble!': 'به Jumble خوش آمدید!',
+    'Welcome to Agnostric!': 'به Jumble خوش آمدید!',
     'Your feed is empty because you are not following anyone yet. Start by exploring interesting content and following users you like!':
       'فید شما خالی است زیرا هنوز کسی را دنبال نمی‌کنید. با کاوش محتوای جالب و دنبال کردن کاربرانی که دوست دارید شروع کنید!',
     'Search Users': 'جستجوی کاربران',

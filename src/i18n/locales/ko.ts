@@ -491,8 +491,8 @@ export default {
     Remote: '원격',
     'Encrypted Key': '암호화된 키',
     'Private Key': '개인 키',
-    'Welcome to Jumble': 'Jumble에 오신 것을 환영합니다',
-    'Jumble is a client focused on browsing relays. Get started by exploring interesting relays or login to view your following feed.':
+    'Welcome to Agnostric': 'Jumble에 오신 것을 환영합니다',
+    'Agnostric (Jumble fork) is a client focused on browsing relays. Get started by exploring interesting relays or login to view your following feed.':
       'Jumble은 릴레이 탐색에 중점을 둔 클라이언트입니다. 흥미로운 릴레이를 탐색하거나 로그인하여 팔로잉 피드를 확인하세요.',
     'Explore Relays': '릴레이 탐색',
     'Choose a feed': '피드 선택',
@@ -592,7 +592,7 @@ export default {
     'Publish Highlight': '하이라이트 게시',
     'Show replies': '답글 표시',
     'Hide replies': '답글 숨기기',
-    'Welcome to Jumble!': 'Jumble에 오신 것을 환영합니다!',
+    'Welcome to Agnostric!': 'Jumble에 오신 것을 환영합니다!',
     'Your feed is empty because you are not following anyone yet. Start by exploring interesting content and following users you like!':
       '아직 아무도 팔로우하지 않아서 피드가 비어 있습니다. 흥미로운 콘텐츠를 탐색하고 마음에 드는 사용자를 팔로우해보세요!',
     'Search Users': '사용자 검색',

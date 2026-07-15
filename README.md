@@ -53,7 +53,7 @@ After finishing, access: http://localhost:8089
 
 ## Run as Desktop App (Electron)
 
-Jumble can also run as a native desktop app via Electron. The desktop build runs all relay WebSockets in the main process (bypassing Chrome's per-origin connection cap) and stores secrets in the OS keychain via Electron's `safeStorage`.
+Agnostric can also run as a native desktop app via Electron. The desktop build runs all relay WebSockets in the main process (bypassing Chrome's per-origin connection cap) and stores secrets in the OS keychain via Electron's `safeStorage`.
 
 ```bash
 # Clone and install (same as above)
@@ -76,7 +76,7 @@ The web build (`npm run dev`, `npm run build`) is unaffected and never loads any
 
 ## Community mode (Optional)
 
-If you want to run Jumble in community mode (with pre-configured relay sets and relays), you can set the following environment variables in a `.env` file at the root of the project:
+If you want to run Agnostric in community mode (with pre-configured relay sets and relays), you can set the following environment variables in a `.env` file at the root of the project:
 
 - `VITE_COMMUNITY_RELAY_SETS`: Environment variable. Set the default relay sets for Jumble. Multiple relay sets can be configured. If configured, the first preset group will be displayed to visitors by default upon opening. Visitors cannot delete relay sets preset by administrators. This is ideal for communities wishing to host their own Jumble instances or for setting default feeds for family members. Examples:
 

@@ -494,8 +494,8 @@ export default {
     Remote: 'リモート',
     'Encrypted Key': '暗号化キー',
     'Private Key': '暗号化されたキー',
-    'Welcome to Jumble': 'Jumbleへようこそ',
-    'Jumble is a client focused on browsing relays. Get started by exploring interesting relays or login to view your following feed.':
+    'Welcome to Agnostric': 'Jumbleへようこそ',
+    'Agnostric (Jumble fork) is a client focused on browsing relays. Get started by exploring interesting relays or login to view your following feed.':
       'Jumbleはリレーを閲覧することに焦点を当てたクライアントです。興味深いリレーを探索するか、ログインしてフォロー中のフィードを表示してください。',
     'Explore Relays': 'リレーを探索',
     'Choose a feed': 'フィードを選択',
@@ -597,7 +597,7 @@ export default {
     'Publish Highlight': 'ハイライトを公開',
     'Show replies': '返信を表示',
     'Hide replies': '返信を非表示',
-    'Welcome to Jumble!': 'Jumbleへようこそ！',
+    'Welcome to Agnostric!': 'Jumbleへようこそ！',
     'Your feed is empty because you are not following anyone yet. Start by exploring interesting content and following users you like!':
       'まだ誰もフォローしていないため、フィードが空です。興味深いコンテンツを探索して、好きなユーザーをフォローしてみましょう！',
     'Search Users': 'ユーザーを検索',

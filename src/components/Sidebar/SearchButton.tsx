@@ -13,7 +13,6 @@ export default function SearchButton({ collapse }: { collapse: boolean }) {
       active={active}
       collapse={collapse}
     >
-      <MagnifyingGlassIcon weight={active ? 'fill' : 'bold'} />
     </SidebarItem>
   )
 }

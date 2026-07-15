@@ -1,7 +1,5 @@
 import PostEditor from '@/components/PostEditor'
-import { cn } from '@/lib/utils'
 import { useNostr } from '@/providers/NostrProvider'
-import { PencilLine } from 'lucide-react'
 import { useState } from 'react'
 import SidebarItem from './SidebarItem'
 
@@ -21,10 +19,21 @@ export default function PostButton({ collapse }: { collapse: boolean }) {
           })
         }}
         variant="default"
-        className={cn('bg-primary gap-2', !collapse && 'justify-center')}
         collapse={collapse}
+        newPostItem
       >
-        <PencilLine />
+      <svg 
+        viewBox="0 0 24 24" 
+        fill="none" 
+        stroke="currentColor"
+        strokeWidth="1.5" 
+        strokeLinecap="round" 
+        strokeLinejoin="round"
+      >
+        <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z" />
+        <line x1="16" y1="8" x2="2" y2="22" />
+        <line x1="17.5" y1="15" x2="9" x2="15" />
+      </svg>
       </SidebarItem>
       <PostEditor open={open} setOpen={setOpen} />
     </div>
