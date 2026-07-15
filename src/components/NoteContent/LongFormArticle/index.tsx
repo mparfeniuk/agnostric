@@ -106,10 +106,10 @@ export default function LongFormArticle({
     <>
       <div
         ref={contentRef}
-        className={`overflow-wrap-anywhere prose prose-zinc max-w-none wrap-break-word dark:prose-invert prose-img:my-0 ${className || ''}`}
+        className={`overflow-wrap-anywhere agnostric-note max-w-none wrap-break-word prose-img:my-0 ${className || ''}`}
       >
         <h1 className="wrap-break-word">{metadata.title}</h1>
-        <div className="-mt-4 mb-6 text-sm text-muted-foreground">
+        <div className="-mt-12 mb-18 text-sm text-muted-foreground">
           {t('{{count}} min read', { count: readingMinutes })}
           <span className="mx-1.5">·</span>
           {t('Last edited')}: <FormattedTimestamp timestamp={event.created_at} />
@@ -122,7 +122,7 @@ export default function LongFormArticle({
         {metadata.image && (
           <ImageWithLightbox
             image={{ url: metadata.image, pubkey: event.pubkey }}
-            className="my-0 aspect-3/1 w-full object-cover"
+            className="my-0 aspect-3/2 w-full object-cover"
           />
         )}
         <Markdown

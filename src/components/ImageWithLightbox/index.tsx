@@ -62,7 +62,7 @@ export default function ImageWithLightbox({
   }
 
   return (
-    <div>
+    <div className="agnostric-image">
       <Image
         key={0}
         className={className}

@@ -1,0 +1,86 @@
+.agnostric-note {
+  font-family: var(--font-lora), serif;
+  color: var(--color-text);
+
+  line-height: 1.85;
+  letter-spacing: 0.015em;
+
+  & h1 {
+    @apply font-normal text-5xl text-amber-100 mt-4 mb-10 pb-6 tracking-wide pr-12 md:pr-18;
+
+    font-family: var(--font-eb-garamond), serif;
+    text-wrap: balance;
+    hyphens: auto;
+  }
+
+  & h2 {
+    @apply font-medium text-2xl text-amber-400/90 mt-16 mb-6 tracking-wide pr-12 md:pr-24;
+
+    font-family: var(--font-eb-garamond), serif;
+    text-wrap: balance;
+  }
+
+  & h3 {
+    @apply font-medium text-xl text-amber-100 mt-10 mb-4;
+
+    font-family: var(--font-eb-garamond), serif;
+  }
+
+  & p {
+    @apply text-lg mb-8 text-amber-50/90 font-light;
+
+    -webkit-font-smoothing: antialiased;
+    hyphens: auto;
+  }
+
+  & strong {
+    &:not(h2 strong, h3 strong, h4 strong) {
+      @apply font-semibold text-amber-200/90;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  & ul,
+  & ol {
+    @apply my-8 pl-8 space-y-4 text-lg;
+  }
+
+  & ul {
+    @apply list-disc [&_li]:marker:text-amber-500/50;
+    font-style: italic;
+  }
+
+  & ol {
+    @apply list-decimal [&_li]:marker:text-amber-500/50;
+  }
+
+  & li {
+    @apply text-amber-50/90 pl-1;
+    line-height: 1.75;
+  }
+
+  & blockquote {
+    @apply my-12 border-l-2 border-amber-500/30 bg-amber-950/10 p-6 italic text-amber-200/80 rounded-r-xl text-lg;
+    line-height: 1.8;
+
+    p {
+        margin: 0;
+    }
+  }
+
+  & a {
+    @apply text-amber-400 font-medium underline decoration-amber-500/30 underline-offset-4 transition-all duration-300;
+
+    &:hover {
+      @apply text-amber-300 decoration-amber-500/80;
+    }
+
+    &:focus-visible {
+      @apply outline-none ring-2 ring-amber-500/50 rounded-sm px-1;
+    }
+  }
+
+  .agnostric-image + p {
+    @apply mt-12;
+  }
+}

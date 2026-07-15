@@ -356,7 +356,7 @@ export function PageManager({ maxStackSize = 5 }: { maxStackSize?: number }) {
             <NotificationProvider>
               <div className="flex w-full wide:justify-around">
                 <div className={cn('wide:w-full', sidebarCollapse ? 'w-16' : 'w-52')} />
-                <div className="min-h-screen w-0 flex-1 border-x bg-background wide:w-[640px] wide:flex-auto wide:shrink-0">
+                <div className="min-h-screen w-0 flex-1 bg-accent/40 wide:w-[640px] wide:flex-auto wide:shrink-0">
                   {!!secondaryStack.length &&
                     secondaryStack.map((item, index) => (
                       <div
