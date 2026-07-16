@@ -1,5 +1,5 @@
 import AboutInfoDialog from '@/components/AboutInfoDialog'
-import Donation from '@/components/Donation'
+// import Donation from '@/components/Donation'
 import DownloadDialog from '@/components/DownloadDialog'
 import {
   SettingsGroup,
@@ -127,7 +127,7 @@ export default function Settings() {
         />
       </SettingsGroup>
 
-      {showDownloadEntry && (
+      {/* {showDownloadEntry && (
         <SettingsGroup>
           <SettingsRow
             icon={<MonitorDown />}
@@ -136,23 +136,23 @@ export default function Settings() {
             onClick={() => setDownloadOpen(true)}
           />
         </SettingsGroup>
-      )}
+      )} */}
 
       <SettingsGroup>
         <AboutInfoDialog>
           <SettingsRow
             icon={<Info />}
             title={t('About')}
-            trailing={`v${import.meta.env.APP_VERSION} (${import.meta.env.GIT_COMMIT})`}
+            // trailing={`v${import.meta.env.APP_VERSION} (${import.meta.env.GIT_COMMIT})`}
             chevron
             clickable
           />
         </AboutInfoDialog>
       </SettingsGroup>
 
-      <div className="pt-6">
+      {/* <div className="pt-6">
         <Donation />
-      </div>
+      </div> */}
 
       {showDownloadEntry && (
         <DownloadDialog open={downloadOpen} onOpenChange={setDownloadOpen} />

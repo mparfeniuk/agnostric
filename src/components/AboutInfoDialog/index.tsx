@@ -1,6 +1,6 @@
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
 import { Drawer, DrawerContent, DrawerTrigger } from '@/components/ui/drawer'
-import { CODY_PUBKEY } from '@/constants'
+import { CODY_PUBKEY, MAX_PUBKEY } from '@/constants'
 import { useScreenSize } from '@/providers/ScreenSizeProvider'
 import { useState } from 'react'
 import Username from '../Username'
@@ -11,17 +11,17 @@ export default function AboutInfoDialog({ children }: { children: React.ReactNod
 
   const content = (
     <>
-      <div className="text-xl font-semibold">Jumble</div>
+      <div className="agnostric-decor-text text-2xl">Agnostric</div>
       <div className="text-muted-foreground">
-        A user-friendly Nostr client for exploring relay feeds
+        It's a fork of the popular <a href="https://jumble.social">Jumble</a> NOSTR client, reimagined for lovers of cozy medieval gothic aesthetics.
       </div>
       <div>
-        Made by <Username userId={CODY_PUBKEY} className="inline-block text-primary" showAt />
+        Adapted by <Username userId={MAX_PUBKEY} className="inline-block text-primary" showAt /> standing on the shoulders of <Username userId={CODY_PUBKEY} className="inline-block text-primary" showAt />
       </div>
       <div>
         Source code:{' '}
         <a
-          href="https://github.com/CodyTseng/jumble"
+          href="https://github.com/mparfeniuk/agnostric"
           target="_blank"
           rel="noreferrer"
           className="text-primary hover:underline"

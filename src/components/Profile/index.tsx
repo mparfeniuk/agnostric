@@ -136,7 +136,7 @@ export default function Profile({ id }: { id?: string }) {
               <TextWithEmojis
                 text={username}
                 emojis={emojis}
-                className="truncate text-3xl font-nostrelium select-text"
+                className="agnostric-decor-text truncate text-3xl select-text"
               />
               <TrustScoreBadge pubkey={pubkey} />
               {isFollowingYou && (
@@ -167,7 +167,7 @@ export default function Profile({ id }: { id?: string }) {
               <ProfileAbout
                 about={about}
                 emojis={emojis}
-                className="mt-2 text-wrap wrap-break-word whitespace-pre-wrap select-text"
+                className="mt-2 text-wrap text-amber-50/80 wrap-break-word whitespace-pre-wrap select-text"
               />
             </Collapsible>
             {website && (

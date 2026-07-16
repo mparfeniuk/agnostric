@@ -13,11 +13,11 @@ const SidebarItem = forwardRef<
   return (
     <Button
       className={cn(
-        'group relative cursor-pointer text-nowrap pb-2 font-semibold font-cormorant transition-colors duration-200 text-xl text-amber-100 hover:text-amber-100/60 w-full justify-start',
+        'group relative cursor-pointer text-nowrap pb-2 font-semibold font-cormorant transition-colors duration-200 text-xl text-amber-50/70 hover:text-amber-50 w-full justify-start',
         active && 'text-primary hover:text-primary/90',
         className
       )}
-      variant="ghost"
+      variant="ghost2"
       title={t(title)}
       ref={ref}
       {...props}

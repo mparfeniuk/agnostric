@@ -1,0 +1,3 @@
+.agnostric-decor-text {
+    @apply w-fit font-agnostric bg-linear-to-b from-amber-50 to-amber-50/50 bg-clip-text text-transparent 
+}

@@ -188,6 +188,7 @@ export const X_URL_REGEX =
 
 export const JUMBLE_PUBKEY = 'f4eb8e62add1340b9cadcd9861e669b2e907cea534e0f7f3ac974c11c758a51a'
 export const CODY_PUBKEY = '8125b911ed0e94dbe3008a0be48cfe5cd0c0b05923cfff917ae7e87da8400883'
+export const MAX_PUBKEY = 'b5d8fef6cc3955b0b41edf54eb49f8d0aa45138d27ee08868f8f38bb61d0d295'
 
 export const NIP_96_SERVICE = [
   'https://mockingyou.com',

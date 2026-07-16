@@ -1,7 +1,7 @@
 export default function Logo() {
   return (
-    <h1 className="font-nostrelium text-primary text-4xl">
-      <span className="text-5xl">a</span>gnostric
+    <h1 className="agnostric-decor-text text-3xl mr-15">
+      Agnostric
     </h1>
   )
 }
