@@ -18,7 +18,6 @@ export default function PostButton({ collapse }: { collapse: boolean }) {
             setOpen(true)
           })
         }}
-        variant="default"
         collapse={collapse}
         newPostItem
       >

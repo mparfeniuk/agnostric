@@ -44,7 +44,7 @@ export default function PrimaryPageSidebar() {
             onClick={() => navigate('home')}
             aria-label="Go to home"
           >
-             <h1 className="font-nostrelium text-primary text-5xl">a</h1>
+             <h1 className="agnostric-decor-text text-3xl">A</h1>
           </button>
         ) : (
           <button

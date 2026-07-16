@@ -23,7 +23,7 @@ const buttonVariants = cva(
         'ghost-destructive':
           'cursor-pointer hover:bg-destructive/20 text-destructive hover:text-destructive',
         link: 'text-foreground underline-offset-4 hover:underline',
-        amber: 'bg-amber-500/15 text-amber-500/60 hover:text-amber-400 active:scale-95 !no-underline font-lora'
+        ambient: "group relative cursor-pointer text-nowrap pb-2 font-semibold font-cormorant transition-colors duration-200 text-xl text-amber-50/70 hover:text-amber-50 w-full justify-start"
       },
       size: {
         default: 'h-9 px-4 py-2',
@@ -31,7 +31,6 @@ const buttonVariants = cva(
         lg: 'h-10 rounded-lg px-8',
         icon: 'h-9 w-9 shrink-0',
         'titlebar-icon': 'h-10 w-10 shrink-0 rounded-xl [&_svg]:size-5',
-        amber: 'size-8 sm:size-9.5 hidden md:flex md:w-auto md:rounded-lg md:px-4'
       }
     },
     defaultVariants: {
