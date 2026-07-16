@@ -7,14 +7,6 @@
 @plugin '@tailwindcss/typography';
 
 @font-face {
-  font-family: 'NostreliumFont';
-  src: url('/fonts/gothic/dz.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'AgnostricFont';
   src: url('/fonts/agnostric.woff2') format('woff2');
   font-weight: 400;

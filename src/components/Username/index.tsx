@@ -36,7 +36,7 @@ export default function Username({
     <div dir="auto" className={className}>
       <SecondaryPageLink
         to={toProfile(userId)}
-        className="truncate hover:underline"
+        className="truncate font-cormorant text-xl text-amber-50/90"
         onClick={(e) => e.stopPropagation()}
       >
         {showAt && '@'}
