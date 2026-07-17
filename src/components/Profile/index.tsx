@@ -137,7 +137,7 @@ export default function Profile({ id }: { id?: string }) {
               <TextWithEmojis
                 text={username}
                 emojis={emojis}
-                className={`${hasUnsupportedFontCharacters(username) ? 'font-cormorant font-semibold' : 'agnostric-decor-text'} truncate text-3xl select-text`}
+                className={`${hasUnsupportedFontCharacters(username) ? 'font-cormorant font-semibold' : 'agnostric-decor-text agnostric-glow-effect'} truncate text-3xl select-text`}
               />
               <TrustScoreBadge pubkey={pubkey} />
               {isFollowingYou && (

@@ -1,7 +1,5 @@
-export default function Logo() {
+export default function Logo({ className }: { className?: string }) {
   return (
-    <h1 className="agnostric-decor-text text-3xl mr-15">
-      Agnostric
-    </h1>
+    <img src="/logo-white-a.png" alt="Agnostric Logo" className={className} />
   )
 }

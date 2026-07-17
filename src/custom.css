@@ -1,3 +1,7 @@
+@utility agnostric-glow-effect {
+    @apply bg-[linear-gradient(to_right,#fffbeb_0%,rgba(255,251,235,0.7)_50%,rgba(255,251,235,0.3)_100%)] bg-clip-text text-transparent
+}
+
 .agnostric-decor-text {
-    @apply w-fit font-agnostric bg-linear-to-b from-amber-50 to-amber-50/50 bg-clip-text text-transparent 
+    @apply w-fit font-agnostric
 }

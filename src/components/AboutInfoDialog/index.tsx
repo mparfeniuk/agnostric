@@ -1,5 +1,6 @@
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
 import { Drawer, DrawerContent, DrawerTrigger } from '@/components/ui/drawer'
+import Logo from '@/assets/Logo'
 import { CODY_PUBKEY, MAX_PUBKEY } from '@/constants'
 import { useScreenSize } from '@/providers/ScreenSizeProvider'
 import { useState } from 'react'
@@ -11,7 +12,7 @@ export default function AboutInfoDialog({ children }: { children: React.ReactNod
 
   const content = (
     <>
-      <div className="agnostric-decor-text text-2xl">Agnostric</div>
+      <Logo className="w-[150px]" />
       <div className="text-muted-foreground">
         It's a fork of the popular <a href="https://jumble.social">Jumble</a> NOSTR client, reimagined for lovers of cozy medieval gothic aesthetics.
       </div>
