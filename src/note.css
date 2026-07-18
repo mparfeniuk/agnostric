@@ -6,7 +6,7 @@
   letter-spacing: 0.015em;
 
   & h1 {
-    @apply font-normal text-5xl mt-4 mb-10 pb-4 pt-3 tracking-wide pr-12 md:pr-18 w-fit font-agnostric agnostric-glow-effect;
+    @apply font-normal text-4xl md:text-5xl mt-4 mb-10 pb-4 pt-3 tracking-wide pr-12 md:pr-18 w-fit font-agnostric agnostric-glow-effect;
 
     &[data-eng-chars="true"] {
       font-family: var(--font-agnostric), serif;
@@ -70,11 +70,23 @@
   }
 
   & blockquote {
-    @apply my-12 border-l-2 border-amber-500/30 bg-amber-950/10 p-6 italic text-amber-200/80 rounded-r-xl text-lg;
+    @apply py-0 mb-8 pr-4 relative italic;
     line-height: 1.8;
+    text-indent: 0px;
+
+    &::before {
+      content: "“";
+      font-family: var(--font-agnostric), serif;
+      
+      @apply absolute;
+      @apply text-6xl text-primary not-italic select-none pointer-events-none;
+      line-height: 0;
+      left: -30px;
+      top: 10px;
+    }
 
     p {
-        margin: 0;
+      @apply m-0 inline;
     }
   }
 
@@ -96,7 +108,7 @@
 }
 
 .note-dialog-wrapper {
-  @apply max-w-[1100px] max-h-[95vh] overflow-y-auto py-15;
+  @apply max-w-[1100px] max-h-[97vh] overflow-y-auto py-15;
   background-color: #000000;
   background-image: url("/black-paper.png");
 }

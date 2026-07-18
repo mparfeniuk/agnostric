@@ -1,13 +1,13 @@
 import { SecondaryPageLink, useSecondaryPage } from '@/PageManager'
 import { FormattedTimestamp } from '@/components/FormattedTimestamp'
-import ImageWithLightbox from '@/components/ImageWithLightbox'
 import HighlightButton from '@/components/HighlightButton'
+import ImageWithLightbox from '@/components/ImageWithLightbox'
 import PostEditor from '@/components/PostEditor'
 import { useTranslatedEvent } from '@/hooks'
 import { getLongFormArticleMetadataFromEvent } from '@/lib/event-metadata'
 import { toNote, toNoteList, toProfile } from '@/lib/link'
-import { hasUnsupportedFontCharacters } from '@/lib/utils'
 import { estimateReadingMinutes } from '@/lib/markdown'
+import { hasUnsupportedFontCharacters } from '@/lib/utils'
 import { ExternalLink } from 'lucide-react'
 import { Event, kinds } from 'nostr-tools'
 import { useMemo, useRef, useState } from 'react'
@@ -109,7 +109,7 @@ export default function LongFormArticle({
         ref={contentRef}
         className={`overflow-wrap-anywhere agnostric-note max-w-none wrap-break-word prose-img:my-0 ${className || ''}`}
       >
-        <h1 data-eng-chars={!hasUnsupportedFontCharacters(metadata.title)}className="wrap-break-word note-title">{metadata.title}</h1>
+        <h1 data-eng-chars={!hasUnsupportedFontCharacters(metadata.title)} className="wrap-break-word note-title">{metadata.title}</h1>
         <div className="-mt-12 mb-18 text-sm text-muted-foreground">
           {t('{{count}} min read', { count: readingMinutes })}
           <span className="mx-1.5">·</span>
@@ -121,10 +121,18 @@ export default function LongFormArticle({
           </blockquote>
         )}
         {metadata.image && (
-          <ImageWithLightbox
-            image={{ url: metadata.image, pubkey: event.pubkey }}
-            className="my-0 aspect-3/2 w-full object-cover"
-          />
+          <div className="my-10 w-full">
+            <div className="relative w-full rounded-2xl shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] ring-1 ring-black/5">
+
+
+              <img src={metadata.image} alt="Вінтажна світлина" className="w-full h-auto rounded-2xl" />
+
+
+              <div className="absolute inset-0 pointer-events-none rounded-2xl bg-gradient-to-tr from-amber-500/5 via-transparent to-transparent mix-blend-color-burn"></div>
+
+            </div>
+          </div>
+
         )}
         <Markdown
           remarkPlugins={[remarkGfm, remarkNostr]}

@@ -112,6 +112,9 @@ const NotePage = forwardRef<TPageRef, { id?: string; index?: number }>(({ id, in
   const layoutRef = useRef<TPageRef>(null)
   const isDesktop = useMediaQuery(1100)
   const contentInDialog = event?.kind === 30023 && isDesktop
+  const { currentIndex } = useSecondaryPage();
+  const isActive = currentIndex === index;
+
 
 
   useImperativeHandle(
@@ -205,6 +208,8 @@ const NotePage = forwardRef<TPageRef, { id?: string; index?: number }>(({ id, in
     <NoteInteractions key={`note-interactions-${event.id}`} event={event} opPubkey={opPubkey} notStickyTabs={contentInDialog} /></>
 
   if (contentInDialog) {
+    if (!isActive) return null;
+
     return (
       <Dialog open={true}>
         <DialogContent className="note-dialog-wrapper">
