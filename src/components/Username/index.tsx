@@ -13,13 +13,15 @@ export default function Username({
   showAt = false,
   className,
   skeletonClassName,
-  withoutSkeleton = false
+  withoutSkeleton = false,
+  specFont
 }: {
   userId: string
   showAt?: boolean
   className?: string
   skeletonClassName?: string
   withoutSkeleton?: boolean
+  specFont?: boolean
 }) {
   const { profile, isFetching } = useFetchProfile(userId)
   const supportTouch = useMemo(() => isTouchDevice(), [])
@@ -31,12 +33,13 @@ export default function Username({
     )
   }
   if (!profile) return null
+  const additionalClass = !hasUnsupportedFontCharacters(profile.username) && specFont ? 'font-agnostric' : '';
 
   const trigger = (
     <div dir="auto" className={className}>
       <SecondaryPageLink
         to={toProfile(userId)}
-        className="truncate"
+        className={cn('truncate', additionalClass)}
         onClick={(e) => e.stopPropagation()}
       >
         {showAt && '@'}

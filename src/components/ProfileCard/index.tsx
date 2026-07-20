@@ -29,7 +29,7 @@ export default function ProfileCard({ userId }: { userId: string }) {
             <TextWithEmojis
               text={username || ''}
               emojis={emojis}
-              className="truncate text-lg font-semibold"
+              className="truncate text-lg font-semibol"
             />
             <TrustScoreBadge pubkey={pubkey} />
           </div>

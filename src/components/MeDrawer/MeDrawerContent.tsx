@@ -69,7 +69,7 @@ export default function MeDrawerContent({ onClose }: { onClose?: () => void }) {
                 <div className="pointer-events-none flex w-full items-center gap-2 px-1">
                   <UserAvatar size="big" userId={pubkey} />
                   <div className="w-0 flex-1">
-                    <Username userId={pubkey} className="truncate text-3xl" />
+                    <Username userId={pubkey} className="truncate text-3xl" specFont />
                     <Nip05 pubkey={pubkey} />
                   </div>
                 </div>
