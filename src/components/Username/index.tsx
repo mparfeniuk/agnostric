@@ -85,7 +85,7 @@ export function SimpleUsername({
   if (!profile) return null
 
   const { username, emojis } = profile
-  const additionalClass = hasUnsupportedFontCharacters(username) && specFont ? '' : 'agnostric-decor-text';
+  const additionalClass = !hasUnsupportedFontCharacters(username) && specFont ? 'font-agnostric' : '';
 
   return (
     <div dir="auto" className={cn(className, additionalClass)}>

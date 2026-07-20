@@ -8,7 +8,6 @@ import {
 } from '@/components/ui/settings'
 import {
   toAccountSettings,
-  toAppearanceSettings,
   toEmojiPackSettings,
   toGeneralSettings,
   toPostSettings,
@@ -29,8 +28,6 @@ import {
   Info,
   KeyRound,
   Languages,
-  MonitorDown,
-  Palette,
   Server,
   Settings2,
   Smile,
@@ -59,12 +56,12 @@ export default function Settings() {
           chevron
           onClick={() => push(toGeneralSettings())}
         />
-        <SettingsRow
+        {/* <SettingsRow
           icon={<Palette />}
           title={t('Appearance')}
           chevron
           onClick={() => push(toAppearanceSettings())}
-        />
+        /> */}
         {!!pubkey && (
           <SettingsRow
             icon={<Languages />}

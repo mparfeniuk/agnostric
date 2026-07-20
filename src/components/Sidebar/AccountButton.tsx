@@ -54,7 +54,7 @@ function ProfileButton({ collapse }: { collapse: boolean }) {
           <div className={cn('flex w-0 flex-1 items-center gap-2', collapse && 'justify-center')}>
             <SimpleUserAvatar size="medium" userId={pubkey} ignorePolicy />
             {!collapse && (
-              <SimpleUsername className="truncate text-lg font-semibold" userId={pubkey} />
+              <SimpleUsername className="truncate text-sm text-amber-50/70" userId={pubkey} />
             )}
           </div>
         </Button>
@@ -75,7 +75,7 @@ function ProfileButton({ collapse }: { collapse: boolean }) {
                 'gap-2',
                 idx < accounts.length - 1 && 'mb-1',
                 isCurrent &&
-                  'bg-primary/10 ring-primary/40 focus:bg-primary/10 cursor-default ring-1 ring-inset'
+                'bg-primary/10 ring-primary/40 focus:bg-primary/10 cursor-default ring-1 ring-inset'
               )}
               onClick={() => {
                 if (!isCurrent) {
@@ -88,7 +88,7 @@ function ProfileButton({ collapse }: { collapse: boolean }) {
                 <div className="flex items-center gap-1.5">
                   <SimpleUsername
                     userId={act.pubkey}
-                    className="truncate font-medium"
+                    className="truncate font-medium text-amber-50/70"
                     skeletonClassName="h-3"
                   />
                   {isCurrent && (
@@ -113,7 +113,7 @@ function ProfileButton({ collapse }: { collapse: boolean }) {
           </div>
         </DropdownMenuItem>
         <DropdownMenuItem
-          className="text-destructive focus:text-destructive"
+          className="text-primary focus:text-primary/70"
           onClick={() => setLogoutDialogOpen(true)}
         >
           <LogOut />
