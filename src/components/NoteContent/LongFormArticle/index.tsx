@@ -110,9 +110,9 @@ export default function LongFormArticle({
         className={`overflow-wrap-anywhere agnostric-note max-w-none wrap-break-word prose-img:my-0 ${className || ''}`}
       >
         <h1 data-eng-chars={!hasUnsupportedFontCharacters(metadata.title)} className="wrap-break-word note-title">{metadata.title}</h1>
-        <div className="-mt-12 mb-18 text-sm text-muted-foreground">
+        <div className="mb-10 text-sm text-muted-foreground">
           {t('{{count}} min read', { count: readingMinutes })}
-          <span className="mx-1.5">·</span>
+          <span className="mx-1.5">❃</span>
           {t('Last edited')}: <FormattedTimestamp timestamp={event.created_at} />
         </div>
         {metadata.summary && (

@@ -2,11 +2,11 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/h
 import { Skeleton } from '@/components/ui/skeleton'
 import { useFetchProfile } from '@/hooks'
 import { toProfile } from '@/lib/link'
-import { cn, isTouchDevice } from '@/lib/utils'
+import { cn, hasUnsupportedFontCharacters, isTouchDevice } from '@/lib/utils'
 import { SecondaryPageLink } from '@/PageManager'
+import { useMemo } from 'react'
 import ProfileCard from '../ProfileCard'
 import TextWithEmojis from '../TextWithEmojis'
-import { useMemo } from 'react'
 
 export default function Username({
   userId,
@@ -64,13 +64,15 @@ export function SimpleUsername({
   showAt = false,
   className,
   skeletonClassName,
-  withoutSkeleton = false
+  withoutSkeleton = false,
+  specFont
 }: {
   userId: string
   showAt?: boolean
   className?: string
   skeletonClassName?: string
   withoutSkeleton?: boolean
+  specFont?: boolean
 }) {
   const { profile, isFetching } = useFetchProfile(userId)
   if (!profile && isFetching && !withoutSkeleton) {
@@ -83,9 +85,10 @@ export function SimpleUsername({
   if (!profile) return null
 
   const { username, emojis } = profile
+  const additionalClass = hasUnsupportedFontCharacters(username) && specFont ? '' : 'agnostric-decor-text';
 
   return (
-    <div dir="auto" className={className}>
+    <div dir="auto" className={cn(className, additionalClass)}>
       {showAt && '@'}
       <TextWithEmojis text={username} emojis={emojis} emojiClassName="mb-1" />
     </div>

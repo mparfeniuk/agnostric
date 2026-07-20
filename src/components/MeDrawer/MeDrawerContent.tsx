@@ -69,7 +69,7 @@ export default function MeDrawerContent({ onClose }: { onClose?: () => void }) {
                 <div className="pointer-events-none flex w-full items-center gap-2 px-1">
                   <UserAvatar size="big" userId={pubkey} />
                   <div className="w-0 flex-1">
-                    <Username userId={pubkey} className="truncate text-2xl font-agnostric" />
+                    <Username userId={pubkey} className="truncate text-3xl" />
                     <Nip05 pubkey={pubkey} />
                   </div>
                 </div>
@@ -83,9 +83,10 @@ export default function MeDrawerContent({ onClose }: { onClose?: () => void }) {
           <SimpleUserAvatar userId={pubkey} size="big" className="shrink-0" />
           <div className="min-w-0">
             <SimpleUsername
-              className="truncate text-xl font-agnostric"
+              className="truncate text-2xl"
               userId={pubkey}
               skeletonClassName="h-6 w-28"
+              specFont
             />
             <button
               className="clickable mt-1 flex max-w-full items-center gap-1.5 rounded-full bg-muted px-2.5 py-1 text-xs text-muted-foreground active:bg-muted/70"
@@ -101,7 +102,7 @@ export default function MeDrawerContent({ onClose }: { onClose?: () => void }) {
       <Separator />
 
       {/* Menu */}
-      <div className="flex-1 px-1 py-1">
+      <div className="flex-1 px-1 pt-4">
         <Item onClick={() => navigate(toProfile(pubkey))}>
           {t('Profile')}
         </Item>
@@ -121,13 +122,13 @@ export default function MeDrawerContent({ onClose }: { onClose?: () => void }) {
 
       {/* Footer */}
       <Separator />
-      <div className="px-2 py-1" style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}>
+      <div className="px-2 py-4" style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}>
         <Item onClick={() => setLoginDialogOpen(true)}>
           <ArrowDownUp />
           {t('Switch account')}
         </Item>
         <Item
-          className="text-destructive focus:text-destructive"
+          className="text-primary focus:text-destructive mb-4"
           onClick={() => setLogoutDialogOpen(true)}
         >
           <LogOut />
