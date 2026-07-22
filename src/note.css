@@ -1,4 +1,4 @@
-.agnostric-note {
+.lfa-note {
   font-family: var(--font-lora), serif;
   color: var(--color-text);
 
@@ -94,6 +94,10 @@
     p {
       @apply m-0 inline;
     }
+  }
+
+  & blockquote:not(.note-intro) {
+      margin-top: calc(var(--spacing) * 8);
   }
 
   & a {

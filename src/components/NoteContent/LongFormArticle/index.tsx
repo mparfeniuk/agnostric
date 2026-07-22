@@ -13,7 +13,9 @@ import { Event, kinds } from 'nostr-tools'
 import { useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import Markdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
+import { createMarkdownComponents } from './MarkdownComponents'
 import NostrNode from './NostrNode'
 import { remarkNostr } from './remarkNostr'
 import { Components } from './types'
@@ -46,7 +48,7 @@ export default function LongFormArticle({
     setShowHighlightEditor(true)
   }
 
-  const components = useMemo(
+  const baseComponents = useMemo(
     () =>
       ({
         nostr: ({ rawText, bech32Id }) => <NostrNode rawText={rawText} bech32Id={bech32Id} />,
@@ -103,11 +105,20 @@ export default function LongFormArticle({
     [event.pubkey]
   )
 
+  const markdownComponents = useMemo(
+    () =>
+      createMarkdownComponents({
+        heroImage: metadata.image,
+        existingComponents: baseComponents as any,
+      }),
+    [metadata.image, baseComponents]
+  )
+
   return (
     <>
       <div
         ref={contentRef}
-        className={`overflow-wrap-anywhere agnostric-note max-w-none wrap-break-word prose-img:my-0 ${className || ''}`}
+        className={`overflow-wrap-anywhere lfa-note max-w-none wrap-break-word prose-img:my-0 ${className || ''}`}
       >
         <h1 data-eng-chars={!hasUnsupportedFontCharacters(metadata.title)} className="wrap-break-word note-title">{metadata.title}</h1>
         <div className="mb-10 text-sm text-muted-foreground">
@@ -116,16 +127,16 @@ export default function LongFormArticle({
           {t('Last edited')}: <FormattedTimestamp timestamp={event.created_at} />
         </div>
         {metadata.summary && (
-          <blockquote>
+          <blockquote className="note-intro">
             <p className="whitespace-pre-line wrap-break-word">{metadata.summary}</p>
           </blockquote>
         )}
         {metadata.image && (
-          <div className="my-10 w-full">
+          <div className="my-8 w-full">
             <div className="relative w-full rounded-2xl shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] ring-1 ring-black/5">
 
 
-              <img src={metadata.image} alt="Вінтажна світлина" className="w-full h-auto rounded-2xl" />
+              <img src={metadata.image} alt={`Hero block - ${metadata.title}`} className="w-full h-auto rounded-2xl" />
 
 
               <div className="absolute inset-0 pointer-events-none rounded-2xl bg-gradient-to-tr from-amber-500/5 via-transparent to-transparent mix-blend-color-burn"></div>
@@ -136,13 +147,14 @@ export default function LongFormArticle({
         )}
         <Markdown
           remarkPlugins={[remarkGfm, remarkNostr]}
+          rehypePlugins={[rehypeRaw]} // Enables HTML <video> parsing
           urlTransform={(url) => {
             if (url.startsWith('nostr:')) {
               return url.slice(6) // Remove 'nostr:' prefix for rendering
             }
             return url
           }}
-          components={components}
+          components={markdownComponents}
         >
           {displayEvent.content}
         </Markdown>
