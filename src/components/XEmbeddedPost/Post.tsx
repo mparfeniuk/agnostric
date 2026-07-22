@@ -75,7 +75,7 @@ const Post = memo(({ tweetId, url, className, embedded = true }: PostProps) => {
             console.error('Failed to embed tweet')
           }
         })
-        .catch((error) => {
+        .catch((error: unknown) => {
           if (!unmountedRef.current) {
             console.error('Error embedding tweet:', error)
           }
