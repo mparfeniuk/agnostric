@@ -36,7 +36,7 @@
   }
 
   & p {
-    @apply text-lg mb-8 text-amber-50/90 font-light;
+    @apply text-lg mb-8 text-amber-50/90 font-light leading-[1.85];
 
     -webkit-font-smoothing: antialiased;
     hyphens: auto;
@@ -70,7 +70,7 @@
   }
 
   & blockquote {
-    @apply py-0 mb-8 pr-4 relative italic;
+    @apply py-0 my-16 pr-4 relative italic;
     line-height: 1.8;
     text-indent: 0px;
     text-wrap: balance;
@@ -94,10 +94,6 @@
     p {
       @apply m-0 inline;
     }
-  }
-
-  & blockquote:not(.note-intro) {
-      margin-top: calc(var(--spacing) * 16);
   }
 
   & a {
