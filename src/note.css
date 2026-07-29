@@ -23,14 +23,14 @@
 
   & h1:not(.note-title),
   & h2 {
-    @apply font-medium text-2xl text-amber-400/90 mt-16 mb-6 tracking-wide pr-12 md:pr-24;
+    @apply font-medium text-2xl text-amber-400/90 mt-16 mb-8 tracking-wide pr-12 md:pr-24;
 
     font-family: var(--font-eb-garamond), serif;
     text-wrap: balance;
   }
 
   & h3 {
-    @apply font-medium text-xl text-amber-100 mt-10 mb-4;
+    @apply font-medium text-xl text-amber-100 mt-8 mb-4;
 
     font-family: var(--font-eb-garamond), serif;
   }
@@ -82,12 +82,12 @@
       @apply absolute;
       @apply text-6xl text-primary not-italic select-none pointer-events-none;
       line-height: 0;
-      top: 15px;
+      top: 10px;
       left: -25px;
 
       @media (max-width: 1100px) {
           left: 0px;
-          top:7px;
+          top: 5px;
       }
     }
 
@@ -97,7 +97,7 @@
   }
 
   & blockquote:not(.note-intro) {
-      margin-top: calc(var(--spacing) * 8);
+      margin-top: calc(var(--spacing) * 16);
   }
 
   & a {

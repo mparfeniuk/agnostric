@@ -134,7 +134,7 @@ export default function LongFormArticle({
           </blockquote>
         )}
         {metadata.image && (
-          <div className="my-8 w-full">
+          <div className="mt-8 mb-16 w-full">
             <div className="relative w-full rounded-2xl shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] ring-1 ring-black/5">
 
 
