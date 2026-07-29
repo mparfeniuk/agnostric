@@ -23,7 +23,7 @@
 
   & h1:not(.note-title),
   & h2 {
-    @apply font-medium text-2xl text-amber-400/90 mt-16 mb-8 tracking-wide pr-12 md:pr-24;
+    @apply font-medium text-2xl text-primary mt-16 mb-8 tracking-wide pr-12 md:pr-24;
 
     font-family: var(--font-eb-garamond), serif;
     text-wrap: balance;
