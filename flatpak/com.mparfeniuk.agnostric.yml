@@ -52,9 +52,9 @@ modules:
       - type: file
         path: com.mparfeniuk.agnostric.metainfo.xml
       - type: file
-        path: ../public/pwa-512x512.png
+        path: ../public/favicon/pwa-512x512.png
       - type: file
-        path: ../public/pwa-192x192.png
+        path: ../public/favicon/pwa-192x192.png
     build-commands:
       - cd main && npm ci --offline
       - |

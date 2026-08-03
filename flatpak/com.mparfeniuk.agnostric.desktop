@@ -1,9 +1,9 @@
 [Desktop Entry]
 Type=Application
-Name=Jumble
+Name=Agnostric
 Comment=A user-friendly Nostr client for exploring relay feeds
 Exec=jumble %U
-Icon=com.codytseng.jumble
+Icon=com.mparfeniuk.agnostric
 Terminal=false
 Categories=Network;InstantMessaging;
-StartupWMClass=Jumble
+StartupWMClass=Agnostric

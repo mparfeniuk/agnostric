@@ -13,12 +13,12 @@
   </description>
   <launchable type="desktop-id">com.mparfeniuk.agnostric.desktop</launchable>
   <developer id="com.codytseng">
-    <name>Max Parfeniuk - Agnostric, Cody Tseng - Jumble</name>
+    <name>Max Parfeniuk - Agnostric</name>
   </developer>
   <url type="homepage">https://github.com/mparfeniuk/agnostric</url>
   <url type="bugtracker">https://github.com/mparfeniuk/agnostric/issues</url>
   <content_rating type="oars-1.1" />
   <releases>
-    <release version="26.7.1" date="2026-07-06" />
+    <release version="1.11.0" date="2026-07-06" />
   </releases>
 </component>
