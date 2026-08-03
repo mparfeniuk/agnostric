@@ -1,6 +1,6 @@
 {
   "name": "agnostric",
-  "version": "1.12.2",
+  "version": "1.12.3",
   "description": "A user-friendly Nostr client for exploring relay feeds",
   "private": true,
   "type": "module",
