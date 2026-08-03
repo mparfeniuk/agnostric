@@ -3,8 +3,9 @@ import { Button } from '@/components/ui/button'
 import { Skeleton } from '@/components/ui/skeleton'
 import UserAvatar, { SimpleUserAvatar, UserAvatarSkeleton } from '@/components/UserAvatar'
 import Username, { SimpleUsername } from '@/components/Username'
-import { isMentioningMutedUsers } from '@/lib/event'
+import { getEventFeedTimestamp, isMentioningMutedUsers } from '@/lib/event'
 import { toNote, toUserAggregationDetail } from '@/lib/link'
+import { isRelayDisconnectReason } from '@/lib/relay'
 import { mergeTimelines } from '@/lib/timeline'
 import { cn, isTouchDevice } from '@/lib/utils'
 import { useSecondaryPage } from '@/PageManager'
@@ -200,18 +201,7 @@ const UserAggregationList = forwardRef<
             },
             onClose: (url, reason) => {
               if (!showRelayCloseReason) return
-              // ignore reasons from nostr-tools
-              if (
-                [
-                  'closed by caller',
-                  'relay connection errored',
-                  'relay connection closed',
-                  'pingpong timed out',
-                  'relay connection closed by us'
-                ].includes(reason)
-              ) {
-                return
-              }
+              if (isRelayDisconnectReason(reason)) return
 
               toast.error(`${url}: ${reason}`)
             }
@@ -273,7 +263,7 @@ const UserAggregationList = forwardRef<
         const results = await Promise.allSettled(
           events.map(async (evt) => {
             if (evt.pubkey === currentPubkey) return null
-            if (evt.created_at < since) return null
+            if (getEventFeedTimestamp(evt) < since) return null
             if (isEventDeleted(evt)) return null
             if (filterMutedNotes && mutePubkeySet.has(evt.pubkey)) return null
             if (

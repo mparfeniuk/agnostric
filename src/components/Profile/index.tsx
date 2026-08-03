@@ -165,7 +165,7 @@ export default function Profile({ id }: { id?: string }) {
               <PubkeyCopy pubkey={pubkey} />
               <NpubQrCode pubkey={pubkey} />
             </div>
-            <Collapsible>
+            <Collapsible threshold={400} collapsedHeight={240} showLessButton>
               <ProfileAbout
                 about={about}
                 emojis={emojis}

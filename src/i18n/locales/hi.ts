@@ -1137,6 +1137,13 @@ export default {
     'Indirect notifications hidden': 'अप्रत्यक्ष सूचनाएं छिपी हैं',
     'Indirect notifications shown': 'अप्रत्यक्ष सूचनाएं दिख रही हैं',
     Resend: 'फिर से भेजें',
-    'Original poster': 'मूल पोस्टर'
+    'Original poster': 'मूल पोस्टर',
+    Anonymous: 'गुमनाम',
+    'Anonymous reply hint':
+      'एक नई, एक बार उपयोग होने वाली Nostr पहचान का उपयोग करता है। आपका खाता इवेंट में दिखाई नहीं देगा, लेकिन रिले और नेटवर्क पर्यवेक्षक फिर भी आपकी गतिविधि को आपसे जोड़ सकते हैं।',
+    'One-time identity': 'एक बार की पहचान',
+    'Try loading more': 'और लोड करने की कोशिश करें',
+    'Show less': 'कम दिखाएं',
+    'Remember this difficulty': 'इस कठिनाई को याद रखें'
   }
 }

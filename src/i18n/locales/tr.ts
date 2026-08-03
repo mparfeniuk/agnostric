@@ -1141,6 +1141,13 @@ export default {
     'Indirect notifications hidden': 'Dolaylı bildirimler gizlendi',
     'Indirect notifications shown': 'Dolaylı bildirimler gösteriliyor',
     Resend: 'Yeniden gönder',
-    'Original poster': 'Orijinal gönderi sahibi'
+    'Original poster': 'Orijinal gönderi sahibi',
+    Anonymous: 'Anonim',
+    'Anonymous reply hint':
+      'Yeni ve tek kullanımlık bir Nostr kimliği kullanır. Hesabınız etkinlikte görünmez, ancak röleler ve ağ gözlemcileri etkinliğinizi yine de ilişkilendirebilir.',
+    'One-time identity': 'Tek kullanımlık kimlik',
+    'Try loading more': 'Daha fazlasını yüklemeyi dene',
+    'Show less': 'Daha az göster',
+    'Remember this difficulty': 'Bu zorluk seviyesini hatırla'
   }
 }
