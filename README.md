@@ -9,7 +9,7 @@ It's a fork of the popular NOSTR client called JUMBLE, reimagined for lovers of 
 git clone https://github.com/mparfeniuk/agnostric.git
 
 # Go into the repository
-cd jumble
+cd agnostric
 
 # Install dependencies
 npm install
@@ -32,7 +32,7 @@ npm run build
 git clone https://github.com/mparfeniuk/agnostric.git
 
 # Go into the repository
-cd jumble
+cd agnostric
 
 # Run the docker compose
 docker compose up --build -d
