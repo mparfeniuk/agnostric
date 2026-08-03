@@ -5,7 +5,7 @@ const DEFAULT_TIMEOUT_MS = 15_000
 const MAX_TIMEOUT_MS = 60_000
 const MAX_BODY_BYTES = 5 * 1024 * 1024
 
-const userAgent = `Jumble/${app.getVersion()} (Desktop; Electron)`
+const userAgent = `Agnostric/${app.getVersion()} (Desktop; Electron)`
 
 export async function proxyFetch(
   url: string,

@@ -37,7 +37,7 @@ Agnostric (Jumble fork) is a user-friendly Nostr client for exploring relay feed
 ### Project Structure
 
 ```
-jumble/
+agnostric/
 ├── src/
 │   ├── components/           # React components
 │   │   ├── ui/               # Base UI components (shadcn/ui style)

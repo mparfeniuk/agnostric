@@ -2,8 +2,8 @@ import 'websocket-polyfill'
 
 import { app, BrowserWindow, nativeTheme, net, protocol, session, shell } from 'electron'
 import { existsSync, statSync } from 'node:fs'
-import { fileURLToPath, pathToFileURL } from 'node:url'
 import path from 'node:path'
+import { fileURLToPath, pathToFileURL } from 'node:url'
 import { registerIpcHandlers, unregisterIpcHandlers } from './ipc.js'
 import { MediaServer } from './media-server.js'
 import { RelayManager } from './relay-manager.js'
@@ -55,7 +55,7 @@ const secrets = new SecretsStore()
 // is not what would actually be replaced. Flatpak builds are updated by
 // Flatpak/Flathub, so the app-level updater should stay disabled there.
 const isFlatpak =
-  process.env.FLATPAK_ID === 'com.codytseng.jumble' || process.env.container === 'flatpak'
+  process.env.FLATPAK_ID === 'com.mparfeniuk.agnostric' || process.env.container === 'flatpak'
 const updater = new Updater(app.isPackaged && !isFlatpak)
 // Tiny http://127.0.0.1 server that hosts the YouTube IFrame shim page so
 // embedded YT players have an http(s) parent origin (the SPA itself runs on
