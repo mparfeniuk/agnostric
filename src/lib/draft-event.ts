@@ -949,7 +949,7 @@ function buildResponseTag(value: string) {
 }
 
 function buildClientTag() {
-  return ['client', 'agnostric']
+  return ['client', 'agnostric.space']
 }
 
 function buildNsfwTag() {
