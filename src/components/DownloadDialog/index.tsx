@@ -13,7 +13,7 @@ import { useTranslation } from 'react-i18next'
 
 type LogoComponent = (props: { className?: string }) => JSX.Element
 
-const RELEASES_BASE = 'https://github.com/CodyTseng/jumble/releases/latest'
+const RELEASES_BASE = 'https://github.com/mparfeniuk/agnostric/releases/latest'
 
 interface DownloadOption {
   label: string
@@ -27,38 +27,38 @@ const OPTIONS: DownloadOption[] = [
   {
     label: 'macOS',
     format: 'DMG · Apple Silicon',
-    filename: 'Jumble-mac-arm64.dmg',
+    filename: 'Agnostric-mac-arm64.dmg',
     Icon: MacosLogo
   },
   {
     label: 'Windows',
     format: 'Installer (.exe) · x64',
-    filename: 'Jumble-windows-x64.exe',
+    filename: 'Agnostric-windows-x64.exe',
     Icon: WindowsLogo
   },
   {
     label: 'Linux x64',
     format: 'AppImage · x86_64',
-    filename: 'Jumble-linux-x86_64.AppImage',
+    filename: 'Agnostric-linux-x86_64.AppImage',
     Icon: LinuxLogo
   },
   {
     label: 'Linux arm64',
     format: 'AppImage · arm64',
-    filename: 'Jumble-linux-arm64.AppImage',
+    filename: 'Agnostric-linux-arm64.AppImage',
     Icon: LinuxLogo
   },
   {
     label: 'Linux x64',
     format: 'Debian / Ubuntu (.deb) · amd64',
-    filename: 'Jumble-linux-amd64.deb',
+    filename: 'Agnostric-linux-amd64.deb',
     Icon: LinuxLogo,
     noteKey: 'No auto-updates — manual re-download required'
   },
   {
     label: 'Linux arm64',
     format: 'Debian / Ubuntu (.deb) · arm64',
-    filename: 'Jumble-linux-arm64.deb',
+    filename: 'Agnostric-linux-arm64.deb',
     Icon: LinuxLogo,
     noteKey: 'No auto-updates — manual re-download required'
   }
@@ -81,7 +81,7 @@ export default function DownloadDialog({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-h-[90vh] overflow-y-auto sm:max-w-md">
         <DialogHeader>
-          <DialogTitle>{t('Download Jumble Desktop')}</DialogTitle>
+          <DialogTitle>{t('Download Agnostric Desktop')}</DialogTitle>
           <DialogDescription>
             {t('Pick a build for your operating system.')}
           </DialogDescription>

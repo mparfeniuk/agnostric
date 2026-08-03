@@ -28,6 +28,7 @@ import {
   Info,
   KeyRound,
   Languages,
+  MonitorDown,
   Server,
   Settings2,
   Smile,
@@ -123,18 +124,16 @@ export default function Settings() {
           onClick={() => push(toSystemSettings())}
         />
       </SettingsGroup>
-
-      {/* {showDownloadEntry && (
+      {showDownloadEntry && (
         <SettingsGroup>
           <SettingsRow
             icon={<MonitorDown />}
-            title={t('Download Jumble Desktop')}
+            title={t('Download Agnostric Desktop')}
             chevron
             onClick={() => setDownloadOpen(true)}
           />
         </SettingsGroup>
-      )} */}
-
+      )}
       <SettingsGroup>
         <AboutInfoDialog>
           <SettingsRow

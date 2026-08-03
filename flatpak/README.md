@@ -1,7 +1,7 @@
 # Flatpak packaging
 
 Agnostric can be built as a Flatpak with the same app id as the Electron package:
-`com.codytseng.jumble`.
+`com.mparfeniuk.agnostric`.
 
 Flatpak builds are architecture-specific. The same manifest can be built for
 `x86_64` and `aarch64`; a Flatpak repository such as Flathub publishes both
@@ -46,7 +46,7 @@ flatpak build-bundle flatpak/repo release/flatpak/Jumble-linux-$(flatpak --defau
 Run the app:
 
 ```bash
-flatpak run com.codytseng.jumble
+flatpak run com.mparfeniuk.agnostric
 ```
 
 ## Flathub

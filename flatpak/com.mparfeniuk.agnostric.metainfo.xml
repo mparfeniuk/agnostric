@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>com.codytseng.jumble</id>
+  <id>com.mparfeniuk.agnostric</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT</project_license>
   <name>Agnostric (Jumble fork)</name>
@@ -11,12 +11,12 @@
       reading notes, and publishing from a desktop-style app.
     </p>
   </description>
-  <launchable type="desktop-id">com.codytseng.jumble.desktop</launchable>
+  <launchable type="desktop-id">com.mparfeniuk.agnostric.desktop</launchable>
   <developer id="com.codytseng">
     <name>Max Parfeniuk - Agnostric, Cody Tseng - Jumble</name>
   </developer>
-  <url type="homepage">https://github.com/CodyTseng/jumble</url>
-  <url type="bugtracker">https://github.com/CodyTseng/jumble/issues</url>
+  <url type="homepage">https://github.com/mparfeniuk/agnostric</url>
+  <url type="bugtracker">https://github.com/mparfeniuk/agnostric/issues</url>
   <content_rating type="oars-1.1" />
   <releases>
     <release version="26.7.1" date="2026-07-06" />

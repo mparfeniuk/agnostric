@@ -125,7 +125,7 @@ export default function LongFormArticle({
         <h1 className="wrap-break-word note-title">{titleProcessed}</h1>
         <div className="mb-10 text-sm text-muted-foreground">
           {t('{{count}} min read', { count: readingMinutes })}
-          <span className="mx-1.5">󠁯•󠁏</span>
+          <span className="mx-1.5">󠁯·</span>
           {t('Last edited')}: <FormattedTimestamp timestamp={event.created_at} />
         </div>
         {metadata.summary && (

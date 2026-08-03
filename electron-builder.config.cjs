@@ -4,7 +4,7 @@ const hasAppleNotarizeCreds = !!process.env.APPLE_ID
 const hasMacSigningCert = !!process.env.CSC_LINK || hasAppleNotarizeCreds
 
 module.exports = {
-  appId: 'com.codytseng.jumble',
+  appId: 'com.mparfeniuk.agnostric',
   productName: 'Agnostric',
   copyright: 'Copyright © ${author}',
   directories: {
@@ -13,9 +13,9 @@ module.exports = {
   },
   publish: {
     provider: 'github',
-    owner: 'CodyTseng',
-    repo: 'jumble',
-    releaseType: 'draft'
+    owner: 'mparfeniuk',
+    repo: 'agnostric',
+    releaseType: 'release'
   },
   files: [
     'dist/**/*',
@@ -37,13 +37,13 @@ module.exports = {
       { target: 'dmg', arch: ['arm64'] },
       { target: 'zip', arch: ['arm64'] }
     ],
-    artifactName: 'Jumble-mac-${arch}.${ext}',
-    icon: 'public/pwa-512x512.png'
+    artifactName: 'Agnostric-mac-${arch}.${ext}',
+    icon: 'public/favicon/pwa-512x512.png'
   },
   win: {
     target: [{ target: 'nsis', arch: ['x64'] }],
-    artifactName: 'Jumble-windows-${arch}.${ext}',
-    icon: 'public/pwa-512x512.png'
+    artifactName: 'Agnostric-windows-${arch}.${ext}',
+    icon: 'public/favicon/pwa-512x512.png'
   },
   nsis: {
     oneClick: true,
@@ -52,7 +52,7 @@ module.exports = {
   linux: {
     target: ['AppImage', 'deb'],
     category: 'Network',
-    artifactName: 'Jumble-linux-${arch}.${ext}',
-    icon: 'public/pwa-512x512.png'
+    artifactName: 'Agnostric-linux-${arch}.${ext}',
+    icon: 'public/favicon/pwa-512x512.png'
   }
 }
