@@ -27,7 +27,7 @@ jobs:
             os: ubuntu-24.04
             build-command: npm run electron:build:linux:x64 -- --publish never
           - name: linux-arm64
-            os: ubuntu-24.04-arm
+            os: ubuntu-latest
             build-command: npm run electron:build:linux:arm64 -- --publish never
     steps:
       - name: Checkout
@@ -82,7 +82,7 @@ jobs:
           - name: x86_64
             os: ubuntu-24.04
           - name: aarch64
-            os: ubuntu-24.04-arm
+            os: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
