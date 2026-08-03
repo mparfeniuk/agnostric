@@ -1,6 +1,6 @@
 {
   "name": "agnostric",
-  "version": "1.11.0",
+  "version": "1.11.1",
   "description": "A user-friendly Nostr client for exploring relay feeds",
   "private": true,
   "type": "module",
@@ -22,6 +22,7 @@
   "scripts": {
     "dev": "vite --host",
     "build": "tsc -b && vite build",
+    "release": "npm version patch && git push origin master --tags",
     "lint": "eslint .",
     "format": "prettier --write .",
     "preview": "vite preview",
